@@ -78,6 +78,7 @@ class Graph:
         for node,edgeDict in self.edges.items():
             if nodeIndex in edgeDict:
                 edgeDict.pop(nodeIndex)
+        self.n -= 1
 
     def topological_sort(self):
         # Check to make sure graph is directed
